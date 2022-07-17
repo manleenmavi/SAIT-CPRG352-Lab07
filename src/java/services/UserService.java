@@ -47,11 +47,6 @@ public class UserService {
             return false;
         }
         
-        //Check user exist
-        if(getUser(user.getEmail()) != null) {
-            return false;
-        }
-        
         if(user.getFirstName().trim().isEmpty() || user.getFirstName().length() > 20) {
             return false;
         }

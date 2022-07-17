@@ -58,11 +58,11 @@
                 </form>
                 
                 <c:if test="${addUserMessage != null}">
-                    <div class="error_message">${addUserMessage}</div>
+                    <div class="any_message">${addUserMessage}</div>
                 </c:if>
             </div>
             
-            <div>
+            <div class="user_list">
                 <div>
                     <table>
                         <tr>
@@ -99,7 +99,9 @@
                     </table>
                 </div>
                 
-                <div>${deleteUserMessage}</div>
+                <c:if test="${deleteUserMessage != null}">
+                    <div class="any_message delete_user_message">${deleteUserMessage}</div>
+                </c:if>
             </div>
             
             <div class="edit_user side_element">
@@ -157,7 +159,7 @@
                 </c:choose>
                 
                 <c:if test="${updateUserMessage != null}">
-                    <div class="error_message">${updateUserMessage}</div>
+                    <div class="any_message">${updateUserMessage}</div>
                 </c:if>
                 
             </div>
