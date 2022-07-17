@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+
+* {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    margin: 0;
+}
+
+.heading {
+    background: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.heading h1 {
+    margin: 0;
+    /*color: #0052D4;*/ 
+}
+
+.main_content {
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.side_element {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px 
+}
+
+.side_element > h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #0052D4;
+}
+
+.side_element > form {
+    margin-top: 30px;
+}
+
+.side_element > form > div {
+    margin-bottom: 20px;
+}
+
+.side_element > form > div:not(.input_div_not_flex){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_submit_div {
+    justify-content: center !important;
+}
+
+.form_submit_div input[type=submit] {
+    background-color: #0052D4;
+    border: none;
+    border-radius: 10px; 
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.error_message {
+    text-align: center;
+    background-color: #800000;
+    color: white;
+    padding: 5px;
+}
+
+/*
+.input_active_checkbox {
+    text-align: end;
+}*/
